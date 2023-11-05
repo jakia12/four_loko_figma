@@ -33,7 +33,6 @@
         padding-right: 0 !important;
         padding-left: 0 !important;
       }
-
       .ban_img {
         max-width: 260px !important;
       }
@@ -54,6 +53,10 @@
         left: -77%;
         top: 62%;
         z-index: 1;
+      }
+      .wrapper {
+        width: 100%;
+        max-width: 1200px;
       }
       .pos_4 {
         position: absolute;
@@ -118,7 +121,20 @@
       .mid_logo {
         width: 450px;
       }
+      .ban_txt {
+        font-size: 20px;
+        color: #000;
+        font-family: Roboto Mono, monospace;
+      }
+
       @media screen and (max-width: 768px) {
+        .ban_txt {
+          font-size: 20px;
+          color: #000;
+          font-family: Roboto Mono, monospace;
+          margin-right: 40px;
+          padding: 0 8px;
+        }
         .pos_1 {
           position: static;
         }
@@ -138,6 +154,7 @@
         }
         .mid_logo {
           width: 336px;
+          margin-left: 20px;
         }
         .button_grp {
           display: block;
@@ -1106,7 +1123,7 @@
               </div>
               <!-- img and text for banner -->
               <section class="banner_section">
-                <div class="container">
+                <div class="wrapper">
                   <div class="row">
                     <div class="col-md-2">
                       <img src="/images/7.jpg" class="ban_img pos_2" alt="" />
@@ -1124,13 +1141,7 @@
                         alt=""
                         class="mid_logo img-fluid"
                       />
-                      <p
-                        style="
-                          font-size: 20px;
-                          color: #000;
-                          font-family: Roboto Mono, monospace;
-                        "
-                      >
+                      <p class="ban_txt">
                         For when you want to wake up feeling like someone just
                         beat the shit out of you.
                       </p>
